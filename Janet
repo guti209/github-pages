@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>San Valentín - Monster Hunter</title>
+    <style>
+        body {
+            background: url('https://i.imgur.com/NEW_HUNTERS_HUG.jpg') no-repeat center center/cover;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+        }
+        .container {
+            margin-top: 15%;
+            padding: 20px;
+            border-radius: 15px;
+            display: inline-block;
+        }
+        h1 {
+            font-size: 3em;
+            text-shadow: 2px 2px 4px black;
+        }
+        p {
+            font-size: 1.5em;
+        }
+        .btn {
+            background: #ff4d4d;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        .btn:hover {
+            background: #ff1a1a;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Feliz San Valentín, Cazador/a!</h1>
+        <p>Que el amor sea más fuerte que un Rajang en modo furia y más eterno que la caza de un Fatalis.</p>
+        <button class="btn" onclick="mostrarMensaje()">Recibe tu mensaje</button>
+        <p id="mensaje" style="display:none; margin-top:10px; font-size:1.2em;"></p>
+    </div>
+    
+    <script>
+        function mostrarMensaje() {
+            document.getElementById('mensaje').style.display = 'block';
+            document.getElementById('mensaje').innerText = "Eres mi Rathian y yo tu Rathalos, juntos surcamos los cielos del amor. ♥";
+        }
+    </script>
+</body>
+</html>
